@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Imagenes/favicon.png"/>
+    <title>Arkanoid</title>
+
+    <script src="Arkanoid/Arkanoid.js"></script>
+    <!--<script src="Arkanoid/Arkanoid (POO).js"></script>-->
+    <link rel="stylesheet" href="Arkanoid/Arkanoid.css">
+</head>
+
+<body>
+    <div id="escenario">
+        <img id="pelota" src="Imagenes/pelota.png" alt="Pelota" />
+        <img id="raqueta" src="Imagenes/raqueta.png" alt="Raqueta" />
+        <div id="ladrillos"></div>
+        <h1 id="comienzo">Haz click para empezar</h1>
+    </div>
+
+    <!--type="button" value="Reiniciar Partida"-->
+    <div class="middle">
+        <img id="logo" src="Imagenes/logo-transparent-background.png" alt="Logo">
+        <div id="datos">
+            <div id="vidas">
+                <p>Vidas</p>
+            </div>
+            <br>
+            <p id="puntos">Puntos: </p>
+            <p id="tiempo">Tiempo: </p>
+            <br>
+
+            <h3>Leyenda</h3>
+            <ul id="leyenda">
+                <li><i>Doble click</i> para Pausar/Renaudar</li>
+                <li>Por cada vida: 200 p</li>
+            </ul>
+        </div>
+        <div class="btn btn3" id="reinicio">Reiniciar Partida</div>
+        <div class="btn btn3" id="menu">Menú</div>
+    </div>
+</body>
+
+</html>
