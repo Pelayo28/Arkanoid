@@ -11,7 +11,7 @@
     function cargarJuego() {
         let delay = 250;
         setTimeout(function () {
-            window.location="Arkanoid.html";
+            window.location="App/Game/Game.html";
         },delay);
     }
 

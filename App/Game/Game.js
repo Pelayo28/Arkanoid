@@ -6,7 +6,7 @@
     function cargarMenu() {
         let delay = 100;
         setTimeout(function () {
-            window.location="Menu.html";
+            window.location="../../Menu.html";
         },delay);
     }
 //Juego
@@ -149,7 +149,7 @@
         borrarLadrillos();
 
         for (const corazon of corazones) {
-            corazon.setAttribute("src", "Imagenes/vida_1.png");
+            corazon.setAttribute("src", "../../Resources/Images/vida_1.png");
             corazon.style.visibility="visible"
         }
 
@@ -181,7 +181,7 @@
             let img = document.createElement("img");
             //Crear nodo tipo Text
             let contenido = document.createTextNode("");
-            img.src="Imagenes/vida_1.png";
+            img.src="../../Resources/Images/vida_1.png";
             //Añadir el nodo text como hijo del nodo Element
             img.appendChild(contenido);
 
@@ -216,13 +216,13 @@
     }
 
     function animar_Perder_Vida() {
-        corazones[vidas].setAttribute("src", "Imagenes/vida_2.png");
+        corazones[vidas].setAttribute("src", "../../Resources/Images/vida_2.png");
         setTimeout(function() {
-            corazones[vidas].setAttribute("src", "Imagenes/vida_3.png");
+            corazones[vidas].setAttribute("src", "../../Resources/Images/vida_3.png");
             setTimeout(function() {
-                corazones[vidas].setAttribute("src", "Imagenes/vida_4.png");
+                corazones[vidas].setAttribute("src", "../../Resources/Images/vida_4.png");
                 setTimeout(function() {
-                    corazones[vidas].setAttribute("src", "Imagenes/vida_5.png");
+                    corazones[vidas].setAttribute("src", "../../Resources/Images/vida_5.png");
                     //corazones[vidas].setAttribute("visibility", "hidden");
                     corazones[vidas].style.visibility="hidden";
                 },120);
@@ -239,7 +239,7 @@
                 let ladrillo = document.createElement("img");
                 //Crear nodo tipo Text
                 let contenido = document.createTextNode("");
-                ladrillo.src="Imagenes/ladrillo_1.png";
+                ladrillo.src="../../Resources/Images/ladrillo_1.png";
                 ladrillo.style.position="absolute";
                 ladrillo.style.left = ancho+"px";
                 ladrillo.style.top= alto+"px";
